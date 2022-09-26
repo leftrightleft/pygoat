@@ -47,3 +47,9 @@ jobs:
         with:
           sarif_file: semgrep.sarif
         if: always()
+        
+      - name: Archive Sarif
+        uses: actions/upload-artifact@v3
+        with:
+          name: semgrep.sarif
+          path: output/semgrep.sarif
