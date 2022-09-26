@@ -52,4 +52,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: semgrep.sarif
-          path: output/semgrep.sarif
+          path: semgrep.sarif
